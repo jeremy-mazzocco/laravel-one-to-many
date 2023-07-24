@@ -15,4 +15,9 @@ class Project extends Model
         'collaborators',
         'date_finished'
     ];
+
+    public function type()
+    {
+        return $this->hasMany(Type::class);
+    }
 }
