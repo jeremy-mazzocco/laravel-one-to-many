@@ -18,8 +18,8 @@ class ProjectFactory extends Factory
     {
         return [
 
-            'name' => fake()->word(),
-            'languages' => fake()->randomElement(['HTML', 'CSS', 'VanillaJS', 'VueJS', 'PHP', 'Laravel', 'SCSS']),
+            'name' => fake()->randomElement(['Io', 'Marco', 'Antonio', 'Pippo', 'Luca', 'Gianni', 'Franco']),
+            'title' => fake()->randomElement(['Boolzapp', 'Boolflix', 'Boolmovie', 'Boolauth', 'Boolcip', 'BoolBool', 'Viaggio a Londra']),
             'collaborators' => fake()->name(),
             'date_finished' => fake()->dateTime(),
         ];
