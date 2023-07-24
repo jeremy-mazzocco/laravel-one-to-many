@@ -13,6 +13,8 @@
                 <div><b>Collaborators: </b>{{ $projects->collaborators }}</div>
 
                 <div><b>Finish Date: </b>{{ $projects->date_finished }}</div>
+
+                <div><b>Type: </b>{{ $projects->types->languages }}</div>
             </li>
         </ul>
     </div>

@@ -16,8 +16,10 @@ class Project extends Model
         'date_finished'
     ];
 
+
     public function type()
     {
-        return $this->hasMany(Type::class);
+
+        return $this->belongsTo(Type::class);
     }
 }

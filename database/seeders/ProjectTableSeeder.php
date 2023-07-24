@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\Project;
+use App\Models\Type;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -15,6 +16,14 @@ class ProjectTableSeeder extends Seeder
      */
     public function run()
     {
-        Project::factory()->count(10)->create();
+        $projects = Project::factory()->count(30)->create();
+
+        // foreach ($projects as $project) {
+
+        //     $type = Type::inRandomOrder()->first();
+
+        //     $project->type_id = $type->id;
+        //     $type->save();
+        // }
     }
 }

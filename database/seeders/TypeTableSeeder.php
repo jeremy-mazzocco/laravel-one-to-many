@@ -17,14 +17,7 @@ class TypeTableSeeder extends Seeder
      */
     public function run()
     {
-        $types = Type::factory()->count(25)->make();
 
-        foreach ($types as $type) {
-
-            $project = Project::inRandomOrder()->first();
-
-            $type->user_id = $project->id;
-            $project->save();
-        }
+        Type::factory()->count(10)->create();
     }
 }
