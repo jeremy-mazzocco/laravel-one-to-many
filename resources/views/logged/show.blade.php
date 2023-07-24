@@ -6,9 +6,13 @@
         <h1>SHOW PAGE</h1>
         <ul>
             <li>
-                <b>Tilte: </b>{{ $projects->title }} <br>
-                <b>Collaborators: </b>{{ $projects->collaborators }} <br>
-                <b>Finish Date: </b>{{ $projects->date_finished }} <br>
+                <div><b>Tilte: </b>{{ $projects->title }}</div>
+
+                <div><b>Name Author: </b>{{ $projects->name }}</div>
+
+                <div><b>Collaborators: </b>{{ $projects->collaborators }}</div>
+
+                <div><b>Finish Date: </b>{{ $projects->date_finished }}</div>
             </li>
         </ul>
     </div>

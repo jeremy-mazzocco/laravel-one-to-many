@@ -6,10 +6,10 @@
     </div>
     <div class="text-center">
         <ul>
-            @foreach ($projects as $p)
-                <a href="{{ route('logged.show', $p->id) }}">
+            @foreach ($projects as $project)
+                <a href="{{ route('logged.show', $project->id) }}">
                     <li>
-                        <b>Name Project: </b>{{ $p->name }} <br>
+                        <b>Name Project: </b>{{ $project->title }} <br>
                     </li>
                 </a>
             @endforeach
