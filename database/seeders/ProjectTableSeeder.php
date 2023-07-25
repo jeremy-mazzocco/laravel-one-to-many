@@ -17,21 +17,6 @@ class ProjectTableSeeder extends Seeder
     public function run()
     {
 
-        // $projects = Project::factory()->count(10)->create();
-
-
-        // $types = Type::all();
-        // $projects = Project::factory()->count(10)->make();
-
-        // for ($i = 0; $i < 10; $i++) {
-        //     $type = $types[$i];
-        //     $project = $projects[$i];
-
-        //     $project->type_id = $type->id;
-        //     $project->save();
-        // }
-
-
         $projects = Project::factory()->count(10)->make();
 
         foreach ($projects as $project) {
@@ -39,7 +24,7 @@ class ProjectTableSeeder extends Seeder
             $type = Type::inRandomOrder()->first();
 
             $project->type_id = $type->id;
-            $type->save();
+            $project->save();
         }
     }
 }
