@@ -35,5 +35,14 @@ return new class extends Migration
             $table->dropForeign('projects_type_id_foreign');
             $table->dropColumn('type_id');
         });
+
+        Schema::table('role_user', function (Blueprint $table) {
+
+            $table->dropForeign('project_technology_project_id_foreign');
+            $table->dropForeign('project_technology_technology_id_foreign');
+
+            $table->dropColumn('project_id');
+            $table->dropColumn('technology_id');
+        });
     }
 };
