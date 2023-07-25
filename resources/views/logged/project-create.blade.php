@@ -33,7 +33,7 @@
                 <label for="type_id">Type</label>
                 <select name="type_id" id="type_id">
                     @foreach ($types as $type)
-                        <option value="{{ $type->id }}">{{ $type->languages }}</option>
+                        <option value="{{ $type->id }}">{{ $type->stack }}</option>
                     @endforeach
                 </select>
             </div>

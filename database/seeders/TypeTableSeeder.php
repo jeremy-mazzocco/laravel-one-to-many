@@ -18,6 +18,6 @@ class TypeTableSeeder extends Seeder
     public function run()
     {
 
-        Type::factory()->count(10)->create();
+        Type::factory()->count(5)->create();
     }
 }

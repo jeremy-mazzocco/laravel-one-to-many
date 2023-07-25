@@ -17,7 +17,6 @@ class ProjectFactory extends Factory
     public function definition()
     {
         return [
-
             'name' => fake()->randomElement(['Io', 'Marco', 'Antonio', 'Pippo', 'Luca', 'Gianni', 'Franco']),
             'title' => fake()->randomElement(['Boolzapp', 'Boolflix', 'Boolmovie', 'Boolauth', 'Boolcip', 'BoolBool', 'Viaggio a Londra']),
             'collaborators' => fake()->name(),

@@ -10,7 +10,7 @@ class Type extends Model
     use HasFactory;
 
     protected $fillable = [
-        'languages'
+        'stack'
     ];
 
     public function projects()

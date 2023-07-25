@@ -14,7 +14,7 @@
 
                 <div><b>Finish Date: </b>{{ $projects->date_finished }}</div>
 
-                <div><b>Type: </b>{{ $projects->type->languages }}</div>
+                <div><b>Type: </b>{{ $projects->type->stack }}</div>
             </li>
         </ul>
     </div>
