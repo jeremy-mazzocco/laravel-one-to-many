@@ -13,7 +13,7 @@ class Type extends Model
         'languages'
     ];
 
-    public function project()
+    public function projects()
     {
         return $this->hasMany(Project::class);
     }
